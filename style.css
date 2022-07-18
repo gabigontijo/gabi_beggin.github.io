@@ -45,8 +45,16 @@
     font-size: 0.7em;
     text-align: justify;
     font-family:'Edu SA Beginner', cursive;
+}
 
+.resumo p a{
+    text-decoration: none;
+    color: #2f3542;
+}
 
+.resumo p a:hover{
+    cursor: pointer;
+    color:#70a1ff;
 }
 
 .content {
@@ -58,19 +66,23 @@
     background-color: #f1f2f6;
 
 }
+ .title h3{
+    color: #70a1ff;
+ }
 
 .content h3{
     margin-left: 30px;
-    font-size: 2em;
+    font-size: 1.5em;
+    
 }
 
 .left-block {
-    width: 48%;
-    height: 48%;
+    width: 45%;
+    height: 45%;
     float: left;
     background-color:#ced6e0;
     margin-top: 35.88px;
-    margin-left: 10px;
+    margin-left: 40px;
     text-align: center;
     color:#57606f;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -80,12 +92,12 @@
 }
 
 .rigth-block {
-    width: 48%;
-    height: 48%;
+    width: 45%;
+    height: 45%;
     float: right;
     background-color: #ced6e0;
     margin-top: 35.88px;
-    margin-right: 10px;
+    margin-right: 40px;
     text-align: center;
     color:#57606f;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -101,19 +113,20 @@
 }
 
 #habilidades img {
-    width: 50%
+    width: 45%
+    
 }
 
 #formacao-experiencia img {
-    width: 45%
+    width: 35%
 }
 
 #portifolio img {
-    width: 50%
+    width: 45%
 }
 
 #contato img {
-    width: 50%
+    width: 45%
 }
 
 #container {
@@ -152,7 +165,7 @@
     color: #70a1ff;
 }
 
-#email, #linkedin {
+#email, #linkedin{
     font-family: 'Raleway', sans-serif;
     text-align: center;
     height: 250px;
@@ -179,3 +192,22 @@
     color: #70a1ff;
     
 }
+#formacao, #experiencia {
+    font-family: 'Raleway', sans-serif;
+    height: 270px;
+    color: #2f3542;
+    /* margin-top: 120px; */
+    margin-bottom: 120px;
+}
+
+#formacao ul li{
+    margin: 0;
+	padding: 36px 0 36px 84px;
+	list-style: none;
+	background-image: url(./img/book.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+    font-size: 25px;
+}
+
