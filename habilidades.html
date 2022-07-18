@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Gabriela Gontijo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,500;0,600;0,700;0,900;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+</head>
+
+<body>
+    <div class="back">
+        <div class="header">
+            <h1 style="color:#ff6b81">Gabriela Gontijo</h1>
+
+            <img id="img" src="./img/IMG_9351.jpg" alt="Foto de Gabriela Gontijo">
+
+            <div class="resumo">
+                <p> <span style="color:#ff4757;font-family:'Passion One', cursive; font-size: 2em;">"</span> Nasci em
+                    Goiânia-Goiás, tenho 29 anos e
+                    atualmente moro em <strong>Braga-Portugal.</strong> <br>
+                    No atual momento estou em transição de carreira.
+                    Iniciei meus estudos na <i>Trybe</i> , para me tornar desenvolvedora <strong>Web
+                        fullStack.</strong><span
+                        style="color:#ff4757;font-family:'Passion One', cursive; font-size: 2em;">"</span>
+                </p>
+
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="menu">
+                <ul>
+                    <li><a href="./index.html"> Início</a></li>
+                    <li><a href="#">Formação e Experiência</a></li>
+                    <li><a href="#">Portifólio</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <h3>Habilidades</h3>
+            <div id="container-html" style="height: 250px; width: 25%; margin: 0 auto; float: left;"></div>
+            <div id="container-CSS" style="height: 250px; width: 25%; margin: 0 auto; float: left;"></div>
+            <div id="container-JavaScript" style="height: 250px; width: 25%; margin: 0 auto; float: left;"></div>
+            <div id="container-React" style="height: 250px; width: 25%; margin: 0 auto; float: left;"></div>
+            <div id="container-SQL" style="height: 250px; width: 25%; margin: 10%  auto; float: left;"></div>
+            <div id="container-NodeJS" style="height: 250px; width: 25%; margin: 10% auto; float: left;"></div>
+            <div id="container-LogicaDeProgramacao" style="height: 250px; width: 25%; margin: 10% auto; float: left;">
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- <p> <a href="#img">Foto perfil</a> </p>
+    <p> <a href="#resumo"> Resumo</a> </p>
+    <p> <a href="#linkedin">Perfil do Linkedin</a></p>
+    <p> <a href="#habilidades">Minhas Habilidades</a></p>
+
+
+    <p id="habilidades"> <a href="https://www.linkedin.com/in/gabriela-gontijo/" target="_blank">Meu linkedin.</a>  </p>    
+    
+    <p><strong> <h3>Habilidades</h3> </strong></p>
+
+    <ul id="habilidades">  
+        <li> <i>Comunicativa</i> </li>
+        <li> <i>Resolutiva</i> </li>
+        <li> <i>Pontualidade</i> </li>
+        <li> <i>Organização</i> </li>
+        <li> <i>Comprometimento</i> </li>
+    </ul>
+
+  -->
+
+</body>
+<script>
+    // http://jsfiddle.net/daniel_s/85qwk2md/
+    let propChart = {
+
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false,
+            backgroundColor: "none",
+            borderColor: '#ffffff'
+        },
+        title: {
+            text: 'HTML',
+            style: { color: '#ff6b81' }
+
+        },
+        exporting: {
+            enabled: false
+        },
+        credits: {
+            enabled: false
+        },
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    enabled: true,
+                    distance: -50,
+                    y: -5,
+                    format: "{y}%",
+                    style: {
+                        fontWeight: 'bold',
+                        color: '#ff6b81',
+                        fontSize: '14px',
+                        borderColor: '#ffffff'
+                    },
+                    filter: {
+                        property: 'name',
+                        operator: '===',
+                        value: 'HTML'
+
+                    },
+                },
+                borderWidth: 3
+            },
+            series: {
+                animation: false
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: '',
+            innerSize: '50%',
+            data: [
+                { name: 'HTML', y: 69, color: '#ff6b81' },
+                { name: '', y: 31, color: "#a4b0be" },
+            ]
+        }]
+    }
+    Highcharts.chart('container-html', propChart);
+
+    let propCss = propChart
+    propCss.title.text = "CSS"
+    propCss.plotOptions.pie.dataLabels.filter.value = "CSS"
+    propCss.series[0].data[0].name = "CSS"
+    propCss.series[0].data[0].y = 20
+    propCss.series[0].data[1].y = 80
+    Highcharts.chart('container-CSS', propCss);
+
+    let propJavaScript = propChart
+    propJavaScript.title.text = "JavaScript"
+    propJavaScript.plotOptions.pie.dataLabels.filter.value = "JavaScript"
+    propJavaScript.series[0].data[0].name = "JavaScript"
+    propJavaScript.series[0].data[0].y = 5
+    propJavaScript.series[0].data[1].y = 95
+    Highcharts.chart('container-JavaScript', propJavaScript);
+
+    let propReact = propChart
+    propReact.title.text = "React"
+    propReact.plotOptions.pie.dataLabels.filter.value = "React"
+    propReact.series[0].data[0].name = "React"
+    propReact.series[0].data[0].y = 0
+    propReact.series[0].data[1].y = 100
+    Highcharts.chart('container-React', propReact);
+
+    let propSQL = propChart
+    propSQL.title.text = "SQL"
+    propSQL.plotOptions.pie.dataLabels.filter.value = "SQL"
+    propSQL.series[0].data[0].name = "SQL"
+    propSQL.series[0].data[0].y = 0
+    propSQL.series[0].data[1].y = 100
+    Highcharts.chart('container-SQL', propSQL);
+
+    let propNodeJS = propChart
+    propNodeJS.title.text = "NodeJS"
+    propNodeJS.plotOptions.pie.dataLabels.filter.value = "NodeJS"
+    propNodeJS.series[0].data[0].name = "NodeJS"
+    propNodeJS.series[0].data[0].y = 0
+    propNodeJS.series[0].data[1].y = 100
+    Highcharts.chart('container-NodeJS', propNodeJS);
+
+
+    let propLogicaDeProgramacao = propChart
+    propLogicaDeProgramacao.title.text = "Lógica De Programação"
+    propLogicaDeProgramacao.plotOptions.pie.dataLabels.filter.value = "Lógica De Programação"
+    propLogicaDeProgramacao.series[0].data[0].name = "Lógica De Programação"
+    propLogicaDeProgramacao.series[0].data[0].y = 70
+    propLogicaDeProgramacao.series[0].data[1].y = 30
+    Highcharts.chart('container-LogicaDeProgramacao', propNodeJS);
+
+
+
+</script>
+
+</html>
