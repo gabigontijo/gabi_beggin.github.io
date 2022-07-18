@@ -211,3 +211,30 @@
     font-size: 25px;
 }
 
+#body-portifolio{
+    width: 100%;
+    
+}
+
+#screenshot-css-html, #screenshot-css-html2 {
+    width: 45%;
+    height: 300px;
+    float: left;
+    padding-left: 1em;
+}
+
+#screenshot-css-html img{
+    width: 100%;
+}
+
+#screenshot-css-html2 img{
+    width: 100%;
+    
+}
+
+#screenshot-css-html p, #screenshot-css-html2 p{
+    font-size: 15px
+}
+
+
+
