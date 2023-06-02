@@ -1,0 +1,16 @@
+.Footer{
+    width: 100%;
+    height: 5em;
+    background-color: var(--hover-color) ;
+}
+
+.Footer_div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Footer_div p {
+    color: var(--purple-color);
+}

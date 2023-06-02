@@ -1,0 +1,36 @@
+.MuiToolbar-root {
+    align-items: flex-end;
+    padding: 0 5em;
+}
+
+.MuiAppBar-root {
+    height: 13vh;
+    box-shadow: unset;
+    background-color: var(--purple-color);
+}
+
+.title_menu {
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.title_menu p {
+ padding-bottom: 0.2em;
+ font-size: 1.2em;
+}
+
+.icons_menu {
+    display: flex;
+
+}
+
+.icons_menu li{
+ list-style: none;
+ padding: 0;
+ cursor: pointer;
+ padding: 0 0.3em;
+
+}

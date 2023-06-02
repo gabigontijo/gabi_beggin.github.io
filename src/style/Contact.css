@@ -1,0 +1,60 @@
+.Contact {
+    width: 100%;
+    height: 40%;
+    padding:  0 5em 5em 5em;
+}
+
+.Contact_div{
+    width: 100%;
+    height: 100%;
+}
+
+.Contact_div h2{
+    display: inline-block;
+    border-bottom: solid 3px var(--purple-color);
+    margin: 2em 0 ;
+    padding: 0 0.75em 0.5em 0;
+    color: var(--title-color);
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.6em;
+}
+
+.Contact_div_articles {
+    width: 100%;
+    display: flex;
+}
+
+.Contact_articles {
+    margin-right: 5em;
+    width: 19em;
+    cursor: pointer;
+
+}
+
+.Contact_articles:hover {
+   background-color: var(--hover-color);
+   border-radius: 2px;
+   width: 19em;
+
+}
+
+.Contact_articles h4 {
+    color: var(--title-color);
+    display: flex;
+    align-items: center;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.2em;
+}
+
+.Contact_articles p {
+    color: var(--text-color);
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.1em;
+    margin-left: 2em;
+}
